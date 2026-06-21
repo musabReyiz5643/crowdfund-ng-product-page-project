@@ -1,0 +1,23 @@
+{
+  "header": {
+    "totalBacked": 89914,
+    "totalBackers": 5007,
+    "daysLeft": 56
+  },
+  "stands": {
+    "BambooStand": {
+      "stock": 101
+    },
+    "BlackEdition": {
+      "stock": 64
+    },
+    "MahoganyEdition": {
+      "stock": 0
+    }
+  },
+  "mins": {
+    "BambooStand": 25,
+    "BlackEdition": 75,
+    "MahoganyEdition": 200
+  }
+}
