@@ -2,54 +2,64 @@
 @import "@fontsource/commissioner/500.css";
 @import "@fontsource/commissioner/700.css";
 
-
 :root {
-    --color-primary-400: hsl(176, 50%, 47%);
-    --color-primary-700: hsl(176, 72%, 28%);
-    --color-neutral-900: hsl(0, 0%, 0%);
-    --color-neutral-500: hsl(0, 0%, 48%);
+  --color-primary-400: hsl(176, 50%, 47%);
+  --color-primary-700: hsl(176, 72%, 28%);
+  --color-neutral-900: hsl(0, 0%, 0%);
+  --color-neutral-500: hsl(0, 0%, 48%);
 }
 
 @layer base {
-    body {
-        font-family: 'Commissioner', sans-serif;
-        font-size: 1rem;
-    }
+  body {
+    font-family: "Commissioner", sans-serif;
+    font-size: 1rem;
+  }
 
-    .navbar-background-image {
-        background-image: url('../assets/images/image-hero-desktop.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        object-fit: cover;
-        height: 50% !important;
-    }
+  .navbar-background-image {
+    background-image: url("../assets/images/image-hero-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 50% !important;
+  }
 
-    .primary-font {
-        font-family: 'Commissioner', sans-serif;
-        font-weight: 700;
-    }
+  .primary-font {
+    font-family: "Commissioner", sans-serif;
+    font-weight: 700;
+  }
 
+  .tertiary-font {
+    font-family: "Commissioner", sans-serif;
+    font-weight: 500;
+  }
 
-    .tertiary-font {
-        font-family: 'Commissioner', sans-serif;
-        font-weight: 500;
-    }
+  .secondary-font {
+    font-family: "Commissioner", sans-serif;
+    font-weight: 400;
+  }
 
-    .secondary-font {
-        font-family: 'Commissioner', sans-serif;
-        font-weight: 400;
-    }
+  input[type="range"]::-webkit-slider-thumb {
+    @apply appearance-none w-0 h-0;
+  }
 
-    input[type="range"]::-webkit-slider-thumb {
-        @apply appearance-none w-0 h-0
-    }
+  .closeIcon:hover path {
+    opacity: 100;
+  }
 
-    .closeIcon:hover path {
-        opacity: 100;
-    }
+  .bookMark:hover circle {
+    fill: hsl(0, 0%, 48%);
+  }
 
-    .bookMark:hover circle {
-        fill: hsl(0, 0%, 48%);
-    }
+  .attribution {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 3px 10px black;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }
